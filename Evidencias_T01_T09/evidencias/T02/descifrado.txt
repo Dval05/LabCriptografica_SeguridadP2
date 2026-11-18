@@ -1,0 +1,2 @@
+Descifrado correcto: acta.txt.recovered
+cmp: archivo recuperado idéntico

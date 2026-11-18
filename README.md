@@ -146,19 +146,19 @@ En [Diagramas/](Diagramas/) están los nueve diagramas en PlantUML (`.puml`) y s
 
 ## Pruebas y evidencias
 
-El [resumen de ejecución](Evidencias_T01_T09/logs/resumen_final.docx) reporta **PASS en T01–T09**. En las pruebas negativas, el PASS corresponde al rechazo esperado.
+El [resumen de ejecución](Evidencias_T01_T09/logs/resumen_final.txt) reporta **PASS en T01–T09**. En las pruebas negativas, el PASS corresponde al rechazo esperado.
 
 | Prueba | Criterio comprobado | Evidencia |
 | --- | --- | --- |
-| T01 · SHA-256 | La huella cambia al modificar el acta. | [Comparación de hashes](Evidencias_T01_T09/evidencias/T01/resultado.docx) |
-| T02 · AES-256-GCM | El archivo recuperado coincide byte a byte con el original. | [Descifrado y comparación](Evidencias_T01_T09/evidencias/T02/descifrado.docx) |
-| T03 · AES-256-GCM alterado | El descifrado rechaza la copia alterada con `InvalidTag`. | [Prueba negativa](Evidencias_T01_T09/evidencias/T03/alteracion_aes.docx) |
-| T04 · RSA-PSS y RSA-OAEP | La firma original se valida y OAEP recupera el mensaje corto. | [Firma](Evidencias_T01_T09/evidencias/T04/firma.docx) · [OAEP](Evidencias_T01_T09/evidencias/T04/rsa_oaep.docx) |
-| T05 · Firma RSA | La verificación rechaza el documento modificado. | [Firma inválida](Evidencias_T01_T09/evidencias/T05/firma_alterada.docx) |
-| T06 · X25519 | Ambos participantes calculan el mismo secreto. | [Comparación](Evidencias_T01_T09/evidencias/T06/ecdh_sanitizado.docx) |
-| T07 · Argon2id | Se acepta la contraseña correcta y se rechaza la incorrecta. | [Correcta](Evidencias_T01_T09/evidencias/T07/verificacion_correcta.docx) · [Incorrecta](Evidencias_T01_T09/evidencias/T07/verificacion_incorrecta.docx) |
-| T08 · HTTPS | El certificado se valida y el servidor responde a GET y POST. | [OpenSSL](Evidencias_T01_T09/evidencias/T08/openssl_s_client.docx) · [GET](Evidencias_T01_T09/evidencias/T08/respuesta_get.json) · [POST](Evidencias_T01_T09/evidencias/T08/respuesta_post.json) |
-| T09 · Captura TLS | Se identifican los saludos TLS y registros cifrados. | [Captura PCAPNG](Evidencias_T01_T09/evidencias/T09/captura_tls.pcapng) · [Análisis de Application Data](Evidencias_T01_T09/evidencias/T09/application_data.docx) |
+| T01 · SHA-256 | La huella cambia al modificar el acta. | [Comparación de hashes](Evidencias_T01_T09/evidencias/T01/resultado.txt) |
+| T02 · AES-256-GCM | El archivo recuperado coincide byte a byte con el original. | [Descifrado y comparación](Evidencias_T01_T09/evidencias/T02/descifrado.txt) |
+| T03 · AES-256-GCM alterado | El descifrado rechaza la copia alterada con `InvalidTag`. | [Prueba negativa](Evidencias_T01_T09/evidencias/T03/alteracion_aes.txt) |
+| T04 · RSA-PSS y RSA-OAEP | La firma original se valida y OAEP recupera el mensaje corto. | [Firma](Evidencias_T01_T09/evidencias/T04/firma.txt) · [OAEP](Evidencias_T01_T09/evidencias/T04/rsa_oaep.txt) |
+| T05 · Firma RSA | La verificación rechaza el documento modificado. | [Firma inválida](Evidencias_T01_T09/evidencias/T05/firma_alterada.txt) |
+| T06 · X25519 | Ambos participantes calculan el mismo secreto. | [Comparación](Evidencias_T01_T09/evidencias/T06/ecdh_sanitizado.txt) |
+| T07 · Argon2id | Se acepta la contraseña correcta y se rechaza la incorrecta. | [Correcta](Evidencias_T01_T09/evidencias/T07/verificacion_correcta.txt) · [Incorrecta](Evidencias_T01_T09/evidencias/T07/verificacion_incorrecta.txt) |
+| T08 · HTTPS | El certificado se valida y el servidor responde a GET y POST. | [OpenSSL](Evidencias_T01_T09/evidencias/T08/openssl_s_client.txt) · [GET](Evidencias_T01_T09/evidencias/T08/respuesta_get.json) · [POST](Evidencias_T01_T09/evidencias/T08/respuesta_post.json) |
+| T09 · Captura TLS | Se identifican los saludos TLS y registros cifrados. | [Captura PCAPNG](Evidencias_T01_T09/evidencias/T09/captura_tls.pcapng) · [Análisis de Application Data](Evidencias_T01_T09/evidencias/T09/application_data.txt) |
 
 Los registros de ejecución se encuentran en [Evidencias_T01_T09/logs/](Evidencias_T01_T09/logs/). Para revisar T09, abre la captura en Wireshark y aplica el filtro de visualización `tcp.port == 8443`. La negociación registrada usó TLS 1.3 con `TLS_AES_256_GCM_SHA384`.
 

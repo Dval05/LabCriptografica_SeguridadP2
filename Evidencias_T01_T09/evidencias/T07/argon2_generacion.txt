@@ -1,0 +1,2 @@
+Contraseña de laboratorio: Hash Argon2id guardado en password.hash
+Formato codificado incluye parámetros y salt; no almacena la contraseña.

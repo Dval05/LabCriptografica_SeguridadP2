@@ -1,0 +1,7 @@
+T01 SHA-256            PASS
+T02 AES-GCM            PASS
+T03 Alteración AES    PASS
+T04 Firma RSA          PASS
+T05 Firma alterada     PASS
+T06 X25519             PASS
+T07 Argon2id           PASS

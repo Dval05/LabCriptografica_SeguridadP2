@@ -1,0 +1,4 @@
+Archivo cifrado: acta.txt.aesgcm | clave: aes.key | nonce almacenado junto al cifrado
+IMPORTANTE: proteger y respaldar la clave por separado.
+archivo=aes.key modo=600 bytes=32
+archivo=acta.txt.aesgcm modo=660 bytes=78

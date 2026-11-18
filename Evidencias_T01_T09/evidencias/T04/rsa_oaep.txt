@@ -1,0 +1,3 @@
+Mensaje cifrado con clave pública -> rsa_message.bin
+Este ejemplo es solo para mensajes cortos; no cifrar archivos grandes con RSA.
+Mensaje recuperado: Clave temporal de laboratorio

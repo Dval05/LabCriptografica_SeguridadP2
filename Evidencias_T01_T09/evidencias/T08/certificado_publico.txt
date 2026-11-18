@@ -1,0 +1,10 @@
+subject=CN=lab.local
+issuer=CN=lab.local
+notBefore=Nov 15 13:41:24 2026 GMT
+notAfter=Nov 22 13:41:24 2026 GMT
+serial=04A055E4749BBE3F68D42341A6CC97921DFEF0F8
+sha256 Fingerprint=8F:3F:96:8D:31:45:95:CB:39:34:F6:AE:66:C1:D8:E8:2C:D5:CF:6C:56:55:4B:85:46:80:3D:5B:35:D3:80:C6
+X509v3 Subject Alternative Name: 
+    DNS:lab.local, IP Address:10.10.10.10
+archivo=server.key modo=600 bytes=2484
+archivo=server.crt modo=660 bytes=1497

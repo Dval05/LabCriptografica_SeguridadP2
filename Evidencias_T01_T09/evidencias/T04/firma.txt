@@ -1,0 +1,2 @@
+Firma creada: resolucion.txt.sig
+FIRMA VÁLIDA: contenido coincide con la firma.

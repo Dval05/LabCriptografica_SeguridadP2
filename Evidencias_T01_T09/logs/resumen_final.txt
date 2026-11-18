@@ -1,0 +1,14 @@
+Ejecución real: 2026-11-15
+T01 SHA-256          PASS
+T02 AES-GCM          PASS
+T03 Alteración AES   PASS
+T04 Firma RSA        PASS
+T05 Firma alterada   PASS
+T06 X25519           PASS
+T07 Argon2id         PASS
+T08 HTTPS            PASS
+T09 Captura TLS      PASS
+
+TLS negociado: TLSv1.3 / TLS_AES_256_GCM_SHA384
+Certificado: Verification OK; SAN IP 10.10.10.10 y DNS lab.local
+Captura: 21260 bytes; 48 paquetes; contenido POST no visible en texto claro

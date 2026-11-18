@@ -1,0 +1,94 @@
+Connecting to 10.10.10.10
+Can't use SSL_get_servername
+depth=0 CN=lab.local
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=lab.local
+   i:CN=lab.local
+   a:PKEY: RSA, 3072 (bit); sigalg: sha256WithRSAEncryption
+   v:NotBefore: Nov 15 13:41:24 2026 GMT; NotAfter: Nov 22 13:41:24 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIEJTCCAo2gAwIBAgIUBKBV5HSbvj9o1CNBpsyXkh3+8PgwDQYJKoZIhvcNAQEL
+BQAwFDESMBAGA1UEAwwJbGFiLmxvY2FsMB4XDTI2MTExNTEzNDEyNFoXDTI2MTEy
+MjEzNDEyNFowFDESMBAGA1UEAwwJbGFiLmxvY2FsMIIBojANBgkqhkiG9w0BAQEF
+AAOCAY8AMIIBigKCAYEAoCl4+CBbe7k8Uuo5sIj0l5S3OcjON9ft9p3KwN0FpChK
+J0vcIN/MEeIs9tQivYYhrhWDj+gsszQfrvm43O2H8bNAYRWYe6mBuCINoK5ynNLV
+RjG3yJ/kxG5HS9s8wylibywV9h2c2UBzkAPPkvGA6hcNXOz7QRQrajV/rHK1lwtZ
+A0yULdtz9YX83GOnhMDOUd9/GWxVD/13upQGCFCfSkmE9NeZT/zV4COVniCogcj6
+ykbC5/0CSTyXw2vzxssilUt/yFRdt40/gWtwYHK8B4XbngGA4c29fHKbBd5UfmXC
+w3h4KiA7CsjY445RWnfVSSXQyoI+ZWK8eIDaZwACKhsFNEK0jRYei6bC9mXGIVHY
+I3UFWLWtonSSFn+a60Iyr6wS+rxf4mxHQDCSCrqWwVsBpWkWGpIP1B+BlYcfWELg
+eTKCiRxaLhWlQFE6Sd0RG7mHQDLYew0PFRtr7Y+27fvddDD5YGrrfcHvuZznW/7U
+g+4dLhqiVsek8m0XyLCxAgMBAAGjbzBtMB0GA1UdDgQWBBSSICJ39DPrd6ErlS8B
+bNAyduSiCTAfBgNVHSMEGDAWgBSSICJ39DPrd6ErlS8BbNAyduSiCTAPBgNVHRMB
+Af8EBTADAQH/MBoGA1UdEQQTMBGCCWxhYi5sb2NhbIcECgoKCjANBgkqhkiG9w0B
+AQsFAAOCAYEAdek/uFckEDol1k3qJQZfdwXOWOnpounw/4tw8SQLvkyt0uy+NFlg
+QUgkdfMD2M+M7V4TO3O+9yarETp74eaTYW49pRgq0Hhjxhv3SNBBYiSPB7TOabAT
+NWeE+ZSs0fTaz/ROLvq58eMCDLlM+TuQH7AACxy80m9iFJKAlCotknjrrsPmWB3t
+ymL81qTtnPW1BljvVfURobgG6/MakvDSc17Oq1IEdBQJ18z3csGbC7q3j+JIZiUg
+opkLcbF2uHNMhUpInehhk7D33l+/pxKA2BFb5TPKZPYAaknU6hsSNL8u3SmNm7aD
+dMXEPTgXIbySZuCyeBTAX3OTcNeGpqBESIyjq62q8gbB1vugfdv8qOc5WrpRt3X9
+aBOvy4VP8qQGLNmmxcYwoxMXppBi5Bg1H8vEXY4TiBOXG0YJRdeyiH0kKAunN8NP
+tg6gQ84dXISGU28L/tSqRyWa60mNWcJacn4687COnWx9DI3YIRQm9A09bqnMGxYV
+p2aT+aha8taJ
+-----END CERTIFICATE-----
+subject=CN=lab.local
+issuer=CN=lab.local
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: rsa_pss_rsae_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 2837 bytes and written 1540 bytes
+Verification: OK
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 3072 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 0 (ok)
+---
+DONE
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_256_GCM_SHA384
+    Session-ID: E8F27278062E5B1C9D1BE58D0FFAC351A253C47707FD606F9482257D34657F1A
+    Session-ID-ctx: 
+    Resumption PSK: 6B9C2F08E412A24B727EFBB13F36A3FE918F7CB273AF057FEB4451097350B46148D38B19FE4878D481A8175CA76CB031
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 7200 (seconds)
+    TLS session ticket:
+    0000 - cd 0d 50 20 77 0c dd 95-5c e0 0a ae 5c 6c cf a9   ..P w...\...\l..
+    0010 - 43 86 2b 82 2c a1 c9 20-f2 db 87 9a 64 c8 4e 7e   C.+.,.. ....d.N~
+    0020 - f4 11 a6 f5 fa ef f8 9d-30 94 a1 68 c3 03 93 29   ........0..h...)
+    0030 - 41 bb bc c1 b3 88 98 f0-a5 85 ba 77 d1 72 f5 97   A..........w.r..
+    0040 - 01 b7 6e f4 a1 5b 4b 44-d5 e3 dd 38 de 28 68 9a   ..n..[KD...8.(h.
+    0050 - ea 93 e6 17 91 56 1b 57-17 f5 19 45 02 54 68 5a   .....V.W...E.ThZ
+    0060 - 5b cc 54 92 82 18 6d ba-53 07 1b f9 fe 09 6a 96   [.T...m.S.....j.
+    0070 - b5 88 7c 41 84 09 a7 72-1f 3d 82 d9 25 9f 82 6e   ..|A...r.=..%..n
+    0080 - df 22 b1 59 21 09 ee 32-e1 19 00 be dd 90 ea 65   .".Y!..2.......e
+    0090 - f3 7e 31 44 e9 2d 59 7d-d5 b9 57 d4 a5 18 e6 8e   .~1D.-Y}..W.....
+    00a0 - 18 1b f9 f7 4e 75 0c 28-a4 14 5c ec ad 9f a3 d9   ....Nu.(..\.....
+    00b0 - d9 a0 cc 02 d6 e6 d9 74-23 4f 33 32 6a 09 41 1d   .......t#O32j.A.
+    00c0 - 2f b7 d5 fb 6a 4a 1d 2e-ad 66 bc bb 9c cb 23 ed   /...jJ...f....#.
+
+    Start Time: 1794750639
+    Timeout   : 7200 (sec)
+    Verify return code: 0 (ok)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK

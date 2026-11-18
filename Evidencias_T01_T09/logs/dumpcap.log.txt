@@ -1,0 +1,9 @@
+Capturing on 'enp0s8'
+File: /home/labadmin/lab-crypto/evidencias/T09/captura_tls.pcapng
+
+Packets: 1 
+Packets: 14 
+Packets: 29 
+Packets: 48 
+Packets captured: 48
+Packets received/dropped on interface 'enp0s8': 48/0 (pcap:0/dumpcap:0/flushed:0/ps_ifdrop:0) (100.0%)

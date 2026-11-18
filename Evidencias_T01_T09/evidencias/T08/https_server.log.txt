@@ -1,0 +1,2 @@
+/home/labadmin/lab-crypto/tests/https/server_https.py:12: DeprecationWarning: datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+  "hora_servidor": datetime.utcnow().isoformat() + "Z"

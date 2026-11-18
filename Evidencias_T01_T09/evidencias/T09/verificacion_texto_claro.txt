@@ -1,0 +1,1 @@
+PASS: contenido POST no visible en texto claro

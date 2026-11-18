@@ -1,0 +1,6 @@
+Par RSA generado: rsa_private.pem y rsa_public.pem
+archivo=rsa_private.pem modo=600 bytes=2484
+archivo=rsa_public.pem modo=660 bytes=625
+Public-Key: (3072 bit)
+Modulus:
+    00:a9:7a:7d:95:13:6c:98:ed:6c:28:64:8d:ef:ed:

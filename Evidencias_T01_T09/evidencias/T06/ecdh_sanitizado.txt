@@ -1,0 +1,4 @@
+X25519 ejecutado con dos pares efÃ­meros.
+Longitud de cada secreto: 32 bytes (256 bits).
+Â¿Coinciden?: True
+Valores completos omitidos deliberadamente.

@@ -1,0 +1,6 @@
+sha256sum inicial: 442086d97d1e632324ab48593af5806a77900f4b606af7c320b217d824ec9d02
+crypto_lab.py inicial: 442086d97d1e632324ab48593af5806a77900f4b606af7c320b217d824ec9d02
+sha256sum modificado: 971d4ae598bb7d23d4bde569085b209995c2f4dbf794674cdd30fa14d2226e4e
+acta.txt: FAILED
+sha256sum: WARNING: 1 computed checksum did NOT match
+Resultado esperado: verificación negativa detectó el cambio
