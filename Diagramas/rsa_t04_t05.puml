@@ -1,0 +1,26 @@
+@startuml rsa_t04_t05
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 17
+skinparam activityBackgroundColor #EAF2FA
+skinparam activityBorderColor #40566E
+start
+:Generar el par RSA-3072;
+:Firmar el documento original con RSA-PSS;
+fork
+  :Verificar la firma original y comprobar\nque OAEP recupera el mensaje corto;
+  if (¿Se cumplen ambas comprobaciones?) then (Sí)
+    :T04 PASS;
+  else (No)
+    :T04 FAIL;
+  endif
+fork again
+  :Editar una copia del documento y verificarla\ncon la firma del original;
+  if (¿Devuelve FIRMA INVÁLIDA y código 2?) then (Sí)
+    :T05 PASS;
+  else (No)
+    :T05 FAIL;
+  endif
+end fork
+stop
+@enduml

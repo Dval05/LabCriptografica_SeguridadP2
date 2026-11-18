@@ -1,0 +1,21 @@
+@startuml sha256_t01
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 17
+skinparam activityBackgroundColor #EAF2FA
+skinparam activityBorderColor #40566E
+start
+:Calcular SHA-256 del acta original\ncon Python y sha256sum;
+if (¿Coinciden las huellas?) then (Sí)
+  :Guardar la huella de referencia; 
+  :Modificar el acta y volver\na calcular su huella;
+  if (¿Cambia la huella y la\nverificación devuelve FAILED?) then (Sí)
+    :T01 PASS;
+  else (No)
+    :T01 FAIL;
+  endif
+else (No)
+  :T01 FAIL;
+endif
+stop
+@enduml

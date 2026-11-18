@@ -1,0 +1,25 @@
+@startuml secuencia_https
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 17
+skinparam sequenceArrowColor #40566E
+skinparam participantBackgroundColor #EAF2FA
+hide footbox
+participant "CRIPTO-CLIENT\ncurl con --cacert" as C
+participant "CRIPTO-SERVER\nPython HTTPS" as S
+C -> S : Conexión TCP al puerto 8443
+C -> S : ClientHello
+S --> C : ServerHello
+S --> C : Certificate, CertificateVerify y Finished cifrados
+C -> C : Validar confianza, vigencia e IP del SAN
+alt Certificado válido
+  C -> S : Finished del cliente
+  C -> S : GET /
+  S --> C : HTTP 200 y JSON del servicio
+  C -> S : POST / con matrícula ficticia
+  S --> C : HTTP 200 y JSON de confirmación
+  note over C,S: T08 PASS si GET y POST devuelven\nlos resultados esperados con validación activa.
+else Certificado rechazado
+  note over C: Se aborta la conexión. T08 FAIL.
+end
+@enduml

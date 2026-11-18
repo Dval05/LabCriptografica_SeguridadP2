@@ -1,0 +1,27 @@
+@startuml aes_gcm_t02_t03
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 17
+skinparam activityBackgroundColor #EAF2FA
+skinparam activityBorderColor #40566E
+start
+:Generar clave AES de 256 bits y nonce de 96 bits; 
+:Cifrar el acta con AES-GCM;
+fork
+  :Descifrar el archivo original y comparar con cmp;
+  if (¿cmp devuelve 0?) then (Sí)
+    :T02 PASS;
+  else (No)
+    :T02 FAIL;
+  endif
+fork again
+  :Alterar un bit de una copia del archivo cifrado;
+  :Intentar descifrar la copia;
+  if (¿Se obtiene InvalidTag?) then (Sí)
+    :T03 PASS;
+  else (No)
+    :T03 FAIL;
+  endif
+end fork
+stop
+@enduml

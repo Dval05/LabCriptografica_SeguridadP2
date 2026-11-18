@@ -1,0 +1,22 @@
+@startuml flujo_criptografico
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 17
+skinparam activityBackgroundColor #EAF2FA
+skinparam activityBorderColor #40566E
+start
+:Preparar archivos y credenciales ficticios;
+switch (Actividad a ejecutar)
+case (A)
+  :SHA-256\nT01;
+case (B)
+  :AES-256-GCM\nT02–T03;
+case (C)
+  :RSA-PSS y RSA-OAEP\nT04–T05;
+case (D)
+  :X25519\nT06;
+case (E)
+  :Argon2id\nT07;
+endswitch
+stop
+@enduml

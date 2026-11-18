@@ -1,0 +1,22 @@
+@startuml argon2id_t07
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 17
+skinparam activityBackgroundColor #EAF2FA
+skinparam activityBorderColor #40566E
+start
+:Derivar el hash Argon2id\nde una contraseña ficticia;
+fork
+  :Verificar con la contraseña correcta;
+  :Salida esperada: Contraseña correcta;
+fork again
+  :Verificar con una contraseña distinta;
+  :Salida esperada: Contraseña incorrecta;
+end fork
+if (¿Se observan ambas salidas esperadas?) then (Sí)
+  :T07 PASS;
+else (No)
+  :T07 FAIL;
+endif
+stop
+@enduml

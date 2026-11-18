@@ -1,0 +1,22 @@
+@startuml red_cripto_lan
+!pragma layout smetana
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 17
+skinparam ArrowColor #40566E
+left to right direction
+frame "Oracle VirtualBox  /  Red interna cripto-lan  /  10.10.10.0/24" {
+  node "CRIPTO-CLIENT\nUbuntu Desktop · 10.10.10.20/24" as cliente #EAF2FA {
+    component "curl y OpenSSL" as curl
+    component "Wireshark / dumpcap" as ws
+    artifact "server.crt\nCertificado público" as cert
+  }
+  node "CRIPTO-SERVER\nUbuntu Desktop · 10.10.10.10/24" as servidor #EAF2FA {
+    component "server_https.py\nPython HTTPServer + ssl" as https
+    artifact "server.crt y server.key" as claves
+  }
+  curl --> https : HTTPS / TCP 8443
+  curl ..> cert : valida con
+  https ..> claves : carga
+}
+@enduml

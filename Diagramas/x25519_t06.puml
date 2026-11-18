@@ -1,0 +1,21 @@
+@startuml x25519_t06
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 17
+skinparam activityBackgroundColor #EAF2FA
+skinparam activityBorderColor #40566E
+start
+:Generar pares efímeros para Alice y Bob;
+fork
+  :Alice combina su clave privada\ncon la clave pública de Bob;
+fork again
+  :Bob combina su clave privada\ncon la clave pública de Alice;
+end fork
+:Comparar los dos secretos de 32 bytes;
+if (¿La comparación devuelve True?) then (Sí)
+  :T06 PASS;
+else (No)
+  :T06 FAIL;
+endif
+stop
+@enduml

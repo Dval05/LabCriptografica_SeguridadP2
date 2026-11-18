@@ -1,0 +1,19 @@
+@startuml captura_tls_t09
+skinparam shadowing false
+skinparam defaultFontName Arial
+skinparam defaultFontSize 17
+skinparam activityBackgroundColor #EAF2FA
+skinparam activityBorderColor #40566E
+start
+:Seleccionar en el cliente la interfaz de cripto-lan;
+:Iniciar captura con filtro tcp port 8443;
+:Generar tráfico con GET y POST sobre HTTPS;
+:Detener la captura y guardar el archivo .pcapng;
+:Localizar ClientHello, ServerHello\ny registros de Application Data;
+if (¿Se identifican los registros TLS y\nel POST no se lee en texto claro?) then (Sí)
+  :T09 PASS;
+else (No)
+  :T09 FAIL;
+endif
+stop
+@enduml
